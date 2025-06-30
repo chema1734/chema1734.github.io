@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contactanos</title>
+    <title>Contáctanos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,6 +30,7 @@
         h1 {
             color: #4CAF50;
         }
+
         .fixed-button {
             position: fixed;
             bottom: 20px; 
@@ -50,16 +51,28 @@
             transform: scale(1.1);
         }
     </style>
-    <script src="https://js.hsforms.net/forms/embed/49759687.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Contáctanos</h1>
         <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros:</p>
-        <div class="hs-form-frame" data-region="na1" data-form-id="8d876dbc-3386-4592-acdd-1fd6070648cd" data-portal-id="49759687"></div>
+        <!-- El formulario de HubSpot se insertará aquí -->
+        <div class="hs-form-frame"></div>
     </div>
+
     <button class="fixed-button" onclick="history.back();">
         ⬅ Regresar
     </button>
+
+    <!-- Script para cargar el formulario de HubSpot -->
+    <script src="https://js.hsforms.net/forms/v2.js"></script>
+    <script>
+        hbspt.forms.create({
+            region: "na1", // Cambia si tu región es diferente
+            portalId: "49759687", // ID de tu portal
+            formId: "8d876dbc-3386-4592-acdd-1fd6070648cd", // ID del formulario
+            target: ".hs-form-frame" // Selector del contenedor donde se insertará el formulario
+        });
+    </script>
 </body>
 </html>
