@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyendas Mexicanas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #8B0000;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #A52A2A;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .legend {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .legend h2 {
+            color: #8B0000;
+        }
+        .footer {
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Texto blanco */
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .footer .links {
+            margin: 10px 0;
+        }
+
+        .footer .links a {
+            color: #4CAF50; /* Verde para los enlaces */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer .links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+
+        .footer .social-icons a {
+            color: white;
+            margin: 0 5px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .footer .social-icons a:hover {
+            color: #4CAF50; /* Cambia de color al pasar el cursor */
+        }
+        .fixed-button {
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            background-color: #007BFF;
+            color: white; 
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 50px; 
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .fixed-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="paginaweb.html">Inicio</a>
+        <a href="la-llorona.html">La Llorona</a>
+        <a href="chupacabras.html">El Chupacabras</a>
+        <a href="Nahuales.html">Los Nahuales</a>
+    </div>
+
+    <div class="content" id="inicio">
+        <h1>Leyendas Mexicanas</h1>
+        <p>Descubre las historias y mitos más fascinantes de México.</p>
+    </div>
+
+    <div class="legend" id="la-llorona">
+        <h2>La Llorona</h2>
+        <p>La Llorona es una de las leyendas más conocidas de México. Cuenta la historia de una mujer que, tras perder a sus hijos, vaga por las noches llorando y buscando a sus pequeños. Se dice que sus gritos pueden escucharse cerca de ríos y lagos.</p>
+        <img src="https://lapregonera.com.mx/wp-content/uploads/2023/03/image-2.png" width="50%" alt="">
+
+    </div>
+
+    <div class="legend" id="chupacabras">
+        <h2>El Chupacabras</h2>
+        <p>El Chupacabras es un mito contemporáneo que describe a una criatura misteriosa que ataca a los animales de granja, dejando marcas de mordidas y sin sangre. La leyenda surgió en los años 90 y ha sido objeto de múltiples teorías y avistamientos.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Chupacabra_%28artist%27s_rendition%29.jpg" alt="Representación artística del chupacabras" width="400">
+
+    </div>
+
+    <div class="legend" id="nahuales">
+        <h2>Los Nahuales</h2>
+        <p>Los Nahuales son seres mágicos que, según la tradición, tienen la capacidad de transformarse en animales. Esta leyenda tiene raíces prehispánicas y simboliza la conexión entre los humanos y la naturaleza.</p>
+        <img src="https://hidalgo.periodicocentral.mx/wp-content/uploads/2023/08/INTERIOR-Nahual-representacion-moderna.webp" width="58%" alt="Ilustración de un nahual transformándose en animal.">
+
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 LEYENDAS MEXICANAS. Todos los derechos reservados.</p>
+        <div class="links">
+            <a href="contactanos1.html">Contacto</a>
+            <a href="privacidad.html">Política de Privacidad</a>
+            <a href="terminos.html">Términos de Servicio</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/profile.php?id=61577185351399" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/history_huma__/?next=%2F" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    <button class="fixed-button" onclick="history.back();">
+        ⬅ Regresar
+    </button>
+</body>
+</html>
