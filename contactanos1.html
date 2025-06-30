@@ -57,7 +57,7 @@
         <h1>Contáctanos</h1>
         <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros:</p>
         <!-- El formulario de HubSpot se insertará aquí -->
-        <div class="hs-form-frame"></div>
+        <div id="hubspot-form"></div>
     </div>
 
     <button class="fixed-button" onclick="history.back();">
@@ -67,11 +67,12 @@
     <!-- Script para cargar el formulario de HubSpot -->
     <script src="https://js.hsforms.net/forms/v2.js"></script>
     <script>
+        // Crear e insertar el formulario de HubSpot
         hbspt.forms.create({
             region: "na1", // Cambia si tu región es diferente
-            portalId: "49759687", // ID de tu portal
-            formId: "8d876dbc-3386-4592-acdd-1fd6070648cd", // ID del formulario
-            target: ".hs-form-frame" // Selector del contenedor donde se insertará el formulario
+            portalId: "49759687", // ID de tu portal en HubSpot
+            formId: "8d876dbc-3386-4592-acdd-1fd6070648cd", // ID del formulario en HubSpot
+            target: "#hubspot-form" // Selector del contenedor donde se insertará el formulario
         });
     </script>
 </body>
